@@ -1,9 +1,6 @@
 package com.howtodoinjava.core.demo.beans;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Service;
 
 public class JavaConfigExample 
 {
@@ -23,28 +20,5 @@ public class JavaConfigExample
         System.out.println(emp);
         
         ctx.close();
-    }
-}
-
-@Configuration
-@ComponentScan(basePackages = "com.howtodoinjava.core.demo.beans")
-class AppConfig {
-     
-}
-
-interface EmployeeManager {
-	public Employee create();
-}
-
-
-@Service
-class EmployeeManagerImpl implements EmployeeManager {
- 
-    @Override
-    public Employee create() {
-        Employee emp =  new Employee();
-        emp.setId(1);
-        emp.setName("Lokesh");
-        return emp;
     }
 }
