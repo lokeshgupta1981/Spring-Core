@@ -5,10 +5,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
 public class JavaConfigExample 
 {
 	public static void main( String[] args )
@@ -51,13 +47,4 @@ class EmployeeManagerImpl implements EmployeeManager {
         emp.setName("Lokesh");
         return emp;
     }
-}
-
-@Getter
-@Setter
-@ToString
-class Employee 
-{
-	private long id;
-	private String name;
 }
