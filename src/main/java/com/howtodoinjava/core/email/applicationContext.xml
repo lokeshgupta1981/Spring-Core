@@ -1,0 +1,28 @@
+<beans>
+ 
+    <context:component-scan base-package="com.howtodoinjava" />    
+     
+    <!-- SET default mail properties -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="25"/>
+        <property name="username" value="admin@gmail.com"/>
+        <property name="password" value="password"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+                <prop key="mail.debug">true</prop>
+            </props>
+        </property>
+    </bean>
+     
+    <!-- We can have some pre-configured messagess also which are ready to send -->
+ 
+    <bean id="preConfiguredMessage" class="org.springframework.mail.SimpleMailMessage">
+        <property name="to" value="somebody@gmail.com"></property>
+        <property name="from" value="admin@gmail.com"></property>
+        <property name="subject" value="FATAL - Application crash. Save your job !!"/>
+    </bean>
+</beans>

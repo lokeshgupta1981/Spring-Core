@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<spring.version>5.2.0.RELEASE</spring.version>
+		<spring.version>5.2.0.RELEASE</spring.version> 
 		<hibernate.version>5.2.11.Final</hibernate.version>
 		<hibernate.validator>5.4.1.Final</hibernate.validator>
 		<!-- <c3p0.version>0.9.5.2</c3p0.version> -->
@@ -18,12 +18,20 @@
 		<jsp.version>2.3.1</jsp.version>
 		<hsqldb.version>1.8.0.10</hsqldb.version>
 		<lombok.version>1.16.18</lombok.version>
+		<email.version>1.6.2</email.version>
 	</properties>
 	<dependencies>
 		<!-- Spring MVC Dependency -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring Context Support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 
@@ -49,11 +57,8 @@
 		</dependency>
 
 		<!-- c3p0 -->
-		<!-- <dependency>
-			<groupId>com.mchange</groupId>
-			<artifactId>c3p0</artifactId>
-			<version>${c3p0.version}</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>com.mchange</groupId> <artifactId>c3p0</artifactId> 
+			<version>${c3p0.version}</version> </dependency> -->
 
 		<!-- Hibernate Validator -->
 		<dependency>
@@ -96,6 +101,12 @@
 			<groupId>hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<version>${hsqldb.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>${email.version}</version>
 		</dependency>
 
 		<!-- Lombok -->

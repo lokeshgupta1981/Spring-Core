@@ -1,4 +1,4 @@
-package com.howtodoinjava.core.autowire.byType;
+package com.howtodoinjava.core.autowire.bytype;
 
 public class DepartmentBean{
 	private String name;

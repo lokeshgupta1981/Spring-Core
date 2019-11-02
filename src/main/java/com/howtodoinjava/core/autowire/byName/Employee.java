@@ -1,4 +1,4 @@
-package com.howtodoinjava.core.autowire.byName;
+package com.howtodoinjava.core.autowire.byname;
 
 public class Employee
 {
