@@ -9,11 +9,11 @@
 
     <context:annotation-config />
     
-	<bean id="employee" class="com.howtodoinjava.core.autowire.byType.EmployeeBean" autowire="byType">
+	<bean id="employee" class="com.howtodoinjava.core.autowire.bytype.EmployeeBean" autowire="byType">
 		<property name="fullName" value="Lokesh Gupta"/> 
 	</bean>
  
-	<bean id="department" class="com.howtodoinjava.core.autowire.byType.DepartmentBean" >
+	<bean id="department" class="com.howtodoinjava.core.autowire.bytype.DepartmentBean" >
 		<property name="name" value="Human Resource" />
 	</bean>
 
