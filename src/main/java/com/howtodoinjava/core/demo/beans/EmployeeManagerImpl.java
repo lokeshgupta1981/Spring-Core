@@ -1,6 +1,6 @@
 package com.howtodoinjava.core.demo.beans;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
