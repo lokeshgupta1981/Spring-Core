@@ -16,7 +16,7 @@
 		<servlets.version>4.0.1</servlets.version>
 		<jsp.version>2.3.3</jsp.version>
 		<hsqldb.version>1.8.0.10</hsqldb.version>
-		<lombok.version>1.18.26</lombok.version>
+		<lombok.version>1.18.30</lombok.version>
 		<email.version>2.0.1</email.version>
 		<jakarta.annotations.version>2.1.1</jakarta.annotations.version>
 	</properties>
