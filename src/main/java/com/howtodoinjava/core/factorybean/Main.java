@@ -1,5 +1,6 @@
 package com.howtodoinjava.core.factorybean;
 
+import org.springframework.beans.propertyeditors.CurrencyEditor;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.security.MessageDigest;
