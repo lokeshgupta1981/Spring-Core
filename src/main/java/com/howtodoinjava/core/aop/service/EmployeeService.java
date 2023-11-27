@@ -1,6 +1,5 @@
 package com.howtodoinjava.core.aop.service;
 
-import com.howtodoinjava.core.aop.aspects.SecurityAspect;
 import com.howtodoinjava.core.demo.beans.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +12,9 @@ public class EmployeeService {
 
   public Employee save(Employee employee) {
     logger.info("Saving the Employee...");
-    return null;
+    if(employee == null){
+      throw new NullPointerException("Input is null");
+    }
+    return employee;
   }
 }
